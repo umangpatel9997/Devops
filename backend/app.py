@@ -44,6 +44,17 @@ def submit() :
     }
     return res
 
+@app.route("/submittodoitem",methods=['POST'])
+def submittodoitem() :
+    form_data =dict(request.json)
+    
+    Itemcollection.insert_one(form_data)
+    res = {
+       'message' : "Data Submitted Successfully"
+    }
+    return res
+
+
 
 @app.route("/view")
 def view():
