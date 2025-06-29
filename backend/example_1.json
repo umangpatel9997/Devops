@@ -6,6 +6,13 @@
       "email": "user1@test.com",
       "name": "User1",
       "password": "user1@123"
+    },
+    {
+      "confirm_password": "user2@123",
+      "datetime": "09/06/2025, 20:14:53",
+      "email": "user2@test.com",
+      "name": "User2",
+      "password": "user2@123"
     }
   ]
 }
