@@ -13,6 +13,16 @@ def home():
     current_time = datetime.today()
     return render_template('index.html',day_of_week=day_of_week,current_time=current_time)
 
+@app.route('/to-do')
+def todo():
+    # day_of_week = datetime.today().strftime('%A')
+    # current_time = datetime.now().strftime('%H:%M:%S')
+
+    day_of_week = datetime.today().strftime('%A')
+    current_time = datetime.today()
+    return render_template('todo.html',day_of_week=day_of_week,current_time=current_time)
+
+
 @app.route("/submit",methods=['POST'])
 def submit() :
     form_data = dict(request.form )
